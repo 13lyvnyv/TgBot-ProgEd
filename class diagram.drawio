@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2023-12-10T11:31:51.557Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.731 YaBrowser/23.11.1.731 Yowser/2.5 Safari/537.36" etag="GD5VlODW-8jfcwJOuD_l" version="22.1.7" type="device">
+  <diagram name="Страница — 1" id="zGUw2sjtTjhu3DVF-5Ql">
+    <mxGraphModel dx="724" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eHvP_ZTthNUAVs6PQTzn-1" value="TelegramBot" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="249" y="30" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eHvP_ZTthNUAVs6PQTzn-2" value="+ show_settings(): boolean&lt;br&gt;+ show_course_menu(): boolean&lt;br&gt;+ show_theory(): boolean&lt;br&gt;+ show_exercises(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="eHvP_ZTthNUAVs6PQTzn-1" vertex="1">
+          <mxGeometry y="26" width="200" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="eHvP_ZTthNUAVs6PQTzn-9" value="User" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="249" y="170" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eHvP_ZTthNUAVs6PQTzn-10" value="- currentCourse(): string&lt;br&gt;- currentTopic(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="eHvP_ZTthNUAVs6PQTzn-9" vertex="1">
+          <mxGeometry y="26" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="eHvP_ZTthNUAVs6PQTzn-17" value="Courses" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="249" y="270" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eHvP_ZTthNUAVs6PQTzn-18" value="- name: string&lt;br&gt;- topics: list&lt;br&gt;- exercises: list" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="eHvP_ZTthNUAVs6PQTzn-17" vertex="1">
+          <mxGeometry y="26" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6Qg09xVxQaHXWJJ5An71-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.52;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.519;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eHvP_ZTthNUAVs6PQTzn-9" target="eHvP_ZTthNUAVs6PQTzn-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="354.8" y="190" as="sourcePoint" />
+            <mxPoint x="350.00000000000006" y="161.456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6Qg09xVxQaHXWJJ5An71-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1.039;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eHvP_ZTthNUAVs6PQTzn-17" target="eHvP_ZTthNUAVs6PQTzn-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="320" as="sourcePoint" />
+            <mxPoint x="220" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
